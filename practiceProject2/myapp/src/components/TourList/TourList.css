@@ -1,0 +1,32 @@
+.tourlist {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Default to 4 columns */
+    grid-column-gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .tourlist {
+        /* Corrected the class name here */
+        grid-template-columns: repeat(4, 1fr);
+        /* Still 4 columns for wider screens */
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .tourlist {
+        width: 85vw;
+        grid-template-columns: repeat(4, 1fr);
+        /* Ensure 4 columns on even larger screens */
+    }
+}
+
+@media screen and (min-width: 1148px) {
+    .tourlist {
+        grid-template-columns: repeat(4, 1fr);
+        /* Still 4 columns for very large screens */
+    }
+}
